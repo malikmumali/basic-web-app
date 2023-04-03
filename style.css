@@ -1,0 +1,183 @@
+html{
+    /* background-size: cover; */
+    /* height: 100%; */
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
+body{
+    
+    
+    background-image: url(images/image-lion-background.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background-position: top center;
+}
+.container{
+    /* background-color: lime; */
+    min-height: 300px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    /* height: 100px; */
+    /* background-color: rgb(31, 53, 45); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px lightgrey;
+
+}
+main{
+    min-height: 300px;
+    /* background-color: mediumpurple; */
+    display: flex;
+    align-items: center;
+}
+section{
+    padding-top: 100px;
+}
+.herobox1{
+    width: 50%;
+    /* background-color: peru; */
+    flex: 2;
+}
+.herobox2{
+    width: 50%;
+    /* background-color: rgb(66, 37, 8); */
+    flex: 1;
+}
+.cards{
+    /* min-height: 300px; */
+    /* background-color: navajowhite; */
+    display: flex;
+    /* flex is applied to parent div, just like min-height.. cards is parent div to card 1, 2 and 3 */
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.card1{
+    width: 30.3%;
+    background-image: url(images/image-background-card1.jpg);
+    /* min-height: 300px; */
+    /* background-color: orangered; */
+    /* background-repeat: no-repeat;-also works as background cover for repeating image */
+    background-size: cover;
+    background-position: bottom;
+}
+.card2{
+    width: 30.3%;
+    background-image: url(images/image-background-card2.jpg);
+    min-height: 250px;
+    /* background-color: rgb(14, 10, 9); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: bottom;
+}
+.card3{
+    width: 30.3%;
+    background-image: url(images/image-background-card3.jpg);
+    min-height: 250px;
+    /* background-color: rgb(204, 186, 180); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: right;
+}
+.card1, .card2, .card3{
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    /* box sizing: borderbox helps retain box size while padding */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
+}
+p{
+    color: white;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+main p{
+    padding: 0px 50px 0px 0px;
+}
+.cards p{
+    margin: 10px 30px 20px 30px;
+    font-size: .75rem;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: white;
+    padding-top: 20px;  
+}
+a{
+    text-decoration: none;
+    color: white;
+    /* for training purposes all links lead to "http://www.byol.me" */
+
+}
+.herobox1 a{
+    background-color: white;
+    color:#FC5E55 ;
+    padding: 10px 25px;
+}
+.navbutton{
+    display: inline-block;
+    color:white ;
+    border: solid 1px white;
+    /* background-color: white; */
+    /* margin-top: 10px; */
+    padding: 10px 25px;
+    margin-left: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
+    position: relative;
+}
+a.mybutton{
+    
+    padding: 10px 25px;
+    margin-left: 5px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.336);
+}
+.mybutton:hover{
+    background-color: gray;
+    /* transition: ease-in; */
+    transition-duration: 0.5s;
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tbox{
+    border: white solid 1px;
+    width: 47%;
+    margin-top: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.tbox p:last-of-type{
+    font-size: 0.8rem;
+    padding-left: 5px;
+}
+.dropdown{
+
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+}
+.navbutton:hover .dropdown{
+    display: block;
+}
+.dropdown .navbutton{
+    margin-top: 20px;
+    min-width: 140px;
+}
